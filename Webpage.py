@@ -6,7 +6,8 @@ st.set_page_config(layout="wide")
 st.title('Villum Center for Hybrid Quantum Materials and Devices')
 
 
-selected=option_menu('',['Research Facilities','Group members','Gallery','Openings'],orientation='horizontal')
+selected=option_menu('',['Research Facilities','Group members','Gallery','Openings'],\
+                      orientation='horizontal', icons=['clipboard', 'person','collection','envelope'])
 if selected=='Group members':
     
     st.header('Principal Investigators')
@@ -160,9 +161,9 @@ if selected=='Research Facilities':
     Fig. 2b shows an example of an \
     exfoliated/stacked monolayer h-BN/graphite/BN structure fabricated in this setup. ')
 
-        col0,col1,col2=st.columns([5,10,5],gap="large")
+        col0,col1,col2=st.columns([5,20,5])
         with col1:
-            st.image('Images/fig2.png',width=600)
+            st.image('Images/fig2.png')
         st.caption('Fig. 2. (a) Motorized transfer setup inside glovebox. (b) A heterostructure composed of monolayer (1L) boron nitride (BN), graphite, multilayer BN\
     (from top to bottom, as illustrated in the inset) on SiO$_2$/Si$^{++}$ wafer.')
 
@@ -198,9 +199,9 @@ if selected=='Research Facilities':
     Raman instrument), using systematic evolution of Raman spectra to monitor how graphene undergo chemical (e.g. oxidization) and structural (e.g. amorphorization,\
     vacancy generation) changes when it is subject to repeated O2 plasma exposure (commonly used as an etching tool).')
 
-        col0,col1,col2=st.columns([5,10,5],gap="large")
+        col0,col1,col2=st.columns([5,20,5],gap="large")
         with col1:
-            st.image('Images/fig4.png', width=600)
+            st.image('Images/fig4.png')
         st.caption('Figure 4: (a) FTIR setup (outside the glovebox) with joystick-controlled scanning stage in all three axes. (b) Optical micrograph of a multilayer hBN\
     flake and (c) its IR spectrum peak corresponding to the B-N bond stretching.')
 
@@ -214,7 +215,7 @@ if selected=='Research Facilities':
 
         col0,col1,col2=st.columns([5,40,5],gap="large")
         with col1:
-            st.image('Images/fig5.png', width=900)
+            st.image('Images/fig5.png')
             
         st.caption('Fig. 5. (a) Cypher S AFM inside glovebox with control unit adjacent to it. (b) Lateral force microscopy (LFM) image showing atomically resolved \
         lattice of highly oriented pyrolytic graphite (HOPG) obtained using Cypher S AFM.')
@@ -309,15 +310,15 @@ if selected=='Gallery':
     col0,col1,col2=st.columns([10,40,10],gap="large")
     with col1:
         st.image('Images/Gallery/1 (4).jpg', caption='Optical microscope and Wirebonding setup')
-        st.image('Images/Gallery/1 (5).jpg', caption='Fume hood for chemical processing and spin coating. ', width= 900)
-        st.image('Images/Gallery/1 (6).jpg', caption='Raman spectrum being acquired by the Renishaw WiRE software.', width= 900)
-        st.image('Images/Gallery/1 (7).jpg', caption='Graphene is being picked up using the transfer stage', width= 900)
-        st.image('Images/Gallery/1 (8).jpg', caption='Graphite-hBN heterostructure', width= 900)
-        st.image('Images/Gallery/1 (9).jpg', caption='12 Tesla magnet from ICEOxford being assembled', width= 900)
-        st.image('Images/Gallery/1 (10).jpg', caption='Vibrational isolation stage is being set up for scanning probes by Nanomagnetics Inc.', width= 900)
-        st.image('Images/Gallery/1 (12).jpg', caption='Three probes for AC, DC, and scanning Hall measurements', width= 900)
-        st.image('Images/Gallery/1 (13).jpg', caption='Device inside the chip carrier that can rotate along both theta and phi axes.', width= 900)
-        st.image('Images/Gallery/1 (14).jpg', caption='Dinner with collaborators', width= 900)
+        st.image('Images/Gallery/1 (5).jpg', caption='Fume hood for chemical processing and spin coating. ')
+        st.image('Images/Gallery/1 (6).jpg', caption='Raman spectrum being acquired by the Renishaw WiRE software.')
+        st.image('Images/Gallery/1 (7).jpg', caption='Graphene is being picked up using the transfer stage')
+        st.image('Images/Gallery/1 (8).jpg', caption='Graphite-hBN heterostructure')
+        st.image('Images/Gallery/1 (9).jpg', caption='12 Tesla magnet from ICEOxford being assembled')
+        st.image('Images/Gallery/1 (10).jpg', caption='Vibrational isolation stage is being set up for scanning probes by Nanomagnetics Inc.')
+        st.image('Images/Gallery/1 (12).jpg', caption='Three probes for AC, DC, and scanning Hall measurements')
+        st.image('Images/Gallery/1 (13).jpg', caption='Device inside the chip carrier that can rotate along both theta and phi axes.')
+        st.image('Images/Gallery/1 (14).jpg', caption='Dinner with collaborators')
 
 
         
