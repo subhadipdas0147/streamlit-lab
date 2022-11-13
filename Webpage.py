@@ -81,7 +81,7 @@ if selected=='Group members':
     st.markdown('---')
     st.header('Graduate Students')
     st.subheader('Kirstine Aggerbeck Stampe')
-    col0,col1,col2=st.columns([1,4,19],gap="large")
+    col0,col1,col1a,col2=st.columns([1,4,1,22],gap="large")
     
     with col1:
         st.image('Images/blank.png',width=180)
