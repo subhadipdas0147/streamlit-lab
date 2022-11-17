@@ -318,7 +318,6 @@ if selected=='Gallery':
         st.image('Images/Gallery/1 (10).jpg', caption='Vibrational isolation stage is being set up for scanning probes by Nanomagnetics Inc.')
         st.image('Images/Gallery/1 (12).jpg', caption='Three probes for AC, DC, and scanning Hall measurements')
         st.image('Images/Gallery/1 (13).jpg', caption='Device inside the chip carrier that can rotate along both theta and phi axes.')
-        st.image('Images/Gallery/1 (14).jpg', caption='Dinner with collaborators')
 
 
         
